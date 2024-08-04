@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyBot</title>
     <style>
-        /* Seu CSS permanece o mesmo */
         @keyframes gradient {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
@@ -29,22 +28,21 @@
             height: 100%;
             display: flex;
             flex-direction: column;
-            background-color: #2a2a2a;
+            background-color: #000;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
             border-radius: 0;
             overflow: hidden;
-            border: 1px solid #1a1a1a;
             position: relative;
         }
 
         #header {
             display: flex;
             align-items: center;
-            padding: 20px;
+            padding: 10px;
             background: linear-gradient(45deg, #075e54, #34ebba, #ff6347, #ffeb3b, #ff00ff);
             background-size: 400% 400%;
             color: white;
-            font-size: 28px;
+            font-size: 20px;
             font-weight: bold;
             border-bottom: 1px solid #1a1a1a;
             animation: gradient 5s ease infinite;
@@ -52,31 +50,31 @@
         }
 
         #profile-pic {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
-            margin-right: 15px;
+            margin-right: 10px;
         }
 
         #microphone-icon {
             position: absolute;
             top: 10px;
             right: 10px;
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
             cursor: pointer;
         }
 
         #messages {
             flex: 1;
-            padding: 20px;
+            padding: 10px;
             overflow-y: auto;
             background-color: #131c21;
         }
 
         .message {
             display: flex;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         .message.user .message-content {
@@ -129,28 +127,28 @@
         }
 
         .message-content {
-            padding: 15px;
+            padding: 10px;
             border-radius: 20px;
             max-width: 100%;
             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-            font-size: 18px;
+            font-size: 16px;
             text-align: left;
         }
 
         #input-container {
             display: flex;
-            padding: 20px;
+            padding: 10px;
             background-color: #2a2a2a;
             border-top: 1px solid #1a1a1a;
         }
 
         #input-container input {
             flex: 1;
-            padding: 15px;
+            padding: 10px;
             border: 1px solid #1a1a1a;
             border-radius: 20px;
             outline: none;
-            font-size: 18px;
+            font-size: 16px;
             background-color: #131c21;
             color: white;
         }
@@ -158,38 +156,38 @@
         #input-container button {
             background-color: #075e54;
             border: none;
-            padding: 15px 25px;
+            padding: 10px 20px;
             border-radius: 20px;
             color: white;
-            margin-left: 15px;
+            margin-left: 10px;
             cursor: pointer;
-            font-size: 18px;
+            font-size: 16px;
         }
 
         @media (max-width: 600px) {
             #header {
-                font-size: 24px;
-                padding: 15px;
+                font-size: 18px;
+                padding: 10px;
             }
 
             #input-container input {
-                font-size: 16px;
-                padding: 10px;
+                font-size: 14px;
+                padding: 8px;
             }
 
             #input-container button {
-                font-size: 16px;
-                padding: 10px 20px;
+                font-size: 14px;
+                padding: 8px 16px;
             }
 
             #microphone-icon {
-                width: 30px;
-                height: 30px;
+                width: 20px;
+                height: 20px;
             }
 
             .message-content {
-                font-size: 16px;
-                padding: 10px;
+                font-size: 14px;
+                padding: 8px;
             }
         }
 
